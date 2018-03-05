@@ -1,0 +1,273 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: C3 Tips - A C3 tip per day!
+email: bachirooov@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  This is about one C3 tip every day! C3 metrics, analytics, performance and more.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+
+permalink: /:categories/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+disqus: c3tips
+
+google_analytics: UA-114866344-1
+
+defaults:
+  -
+    scope:
+      path: _posts/en
+      type: posts
+    values:
+      layout: default
+      lang: en
+      is_post: true
+  -
+    scope:
+      path: _posts/zh_CN
+      type: posts
+    values:
+      layout: default
+      lang: zh_CN
+      is_post: true
+  -
+    scope:
+      path: _posts/es_ES
+      type: posts
+    values:
+      layout: default
+      lang: es_ES
+      is_post: true
+  -
+    scope:
+      path: _posts/fr_FR
+      type: posts
+    values:
+      layout: default
+      lang: fr_FR
+      is_post: true
+
+myCategories:
+  - typesystem
+  - timeseries
+  - platform
+  - ui
+  - more
+
+# languages var
+languages:
+  -
+    name: en
+    link: /
+  -
+    name: zh_CN
+    link: /zh_CN
+  - 
+    name: es_ES
+    link: /es_ES
+  -
+    name: fr_FR
+    link: /fr_FR
+
+transl:
+  en:
+    btn_submit_your_tip:
+      txt: Submit your tip
+      link: https://github.com/c3-bachr/c3tips/blob/master/CONTRIBUTING.md
+    dropdown_lang:
+      en:
+        txt: English
+        link: /
+      es_ES:
+        txt: Español
+        link: /
+      fr_FR:
+        txt: Français
+        link: /
+      zh_CN:
+        txt: 中国大陆
+        link: /
+    txt_latest_tips: Latest Tips
+    txt_popular_tips: Popular Tips
+    txt_read_more: Read More
+    txt_email_suscriber: Get the latest in C3 IoT, once a week.
+    txt_email_suscriber_2: Become a friend.
+    txt_email_placeholder: E-mail address
+    txt_email_button: Send
+    menu_footer:
+      about:
+        txt: About
+        link: /
+      contact:
+        txt: Contact
+        link: /
+    txt_footer: C3 IoT Tips is a collection of useful daily tips that will allow you to improve your C3 skills.
+    categories:
+      typesystem: TypeSystem
+      timeseries: TimeSeries
+      platform: Platform
+      ui: UI
+      more: More
+    read_more: Read More
+    show_me_next_page: Load me more tips
+    show_me_prev_page: Show me previous page
+  es_ES:
+    btn_submit_your_tip:
+      txt: Envía tu tip
+      link: https://github.com/c3-bachr/c3tips/blob/master/CONTRIBUTING_es_ES.md
+    dropdown_lang:
+      en:
+        txt: English
+        link: /
+      es_ES:
+        txt: Español
+        link: /
+      zh_TW:
+        txt: 台灣
+        link: /
+      zh_CN:
+        txt: 中国大陆
+        link: /
+    txt_latest_tips: Úlitmos Tips
+    txt_popular_tips: Tips Populares
+    txt_read_more: Leer más
+    txt_email_suscriber: Get the latest in C3 IoT, once a week.
+    txt_email_suscriber_2: Become a friend.
+    txt_email_placeholder: E-mail address
+    txt_email_button: Enviar
+    menu_footer:
+      about:
+        txt: Acerca
+        link: /
+      contact:
+        txt: Contacto
+        link: /
+    txt_footer: C3 IoT Tips is a collection of useful daily C3 tips that will allow you to improve your code writing
+    categories:
+      typesystem: TypeSystem
+      timeseries: TimeSeries
+      platform: Platform
+      ui: UI
+      more: Más
+    read_more: Leer más
+    show_me_next_page: Siguiente Página
+    show_me_prev_page: Página Anterior
+  zh_CN:
+    btn_submit_your_tip:
+      txt: 提交小知识
+      link: https://github.com/c3-bachr/c3tips/blob/master/CONTRIBUTING_zh_CN.md
+    dropdown_lang:
+      en:
+        txt: English
+        link: /
+      es_ES:
+        txt: Español
+        link: /
+      zh_TW:
+        txt: 台灣
+        link: /
+      zh_CN:
+        txt: 中国大陆
+        link: /
+    txt_latest_tips: Latest Tips
+    txt_popular_tips: Popular Tips
+    txt_read_more: Read More
+    txt_email_suscriber: Get the latest in C3 IoT, once a week.
+    txt_email_suscriber_2: Become a friend.
+    txt_email_placeholder: E-mail address
+    txt_email_button: Send
+    menu_footer:
+      about:
+        txt: 关于
+        link: /
+      contact:
+        txt: Contact
+        link: /
+    txt_footer: C3 IoT Tips is a collection of useful daily C3 tips that will allow you to improve your code writing
+    categories:
+      typesystem: TypeSystem
+      timeseries: TimeSeries
+      platform: Platform
+      ui: UI
+      more: More
+    read_more: Read More
+    show_me_next_page: 下一条
+    show_me_prev_page: 上一条
+  fr_FR:
+    btn_submit_your_tip:
+      txt: Submit your tip
+      link: https://github.com/c3-bachr/c3tips/blob/master/CONTRIBUTING_fr_FR.md
+    dropdown_lang:
+      fr_FR:
+        txt: Français
+        link: /
+      en:
+        txt: English
+        link: /
+      es_ES:
+        txt: Español
+        link: /
+      zh_CN:
+        txt: 中国大陆
+        link: /
+    txt_latest_tips: Latest Tips
+    txt_popular_tips: Popular Tips
+    txt_read_more: Read More
+    txt_email_suscriber: Get the latest in C3 IoT, once a week.
+    txt_email_suscriber_2: Become a friend.
+    txt_email_placeholder: E-mail address
+    txt_email_button: Send
+    menu_footer:
+      about:
+        txt: About
+        link: /
+      contact:
+        txt: Contact
+        link: /
+    txt_footer: C3 IoT Tips is a collection of useful daily C3 tips that will allow you to improve your code writing
+    categories:
+      typesystem: TypeSystem
+      timeseries: TimeSeries
+      platform: Platform
+      ui: UI
+      more: More
+    read_more: Read More
+    show_me_next_page: Load me more tips
+    show_me_prev_page: Show me previous page
+ 
